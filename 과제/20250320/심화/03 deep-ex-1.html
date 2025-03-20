@@ -284,6 +284,12 @@
             users: users,
           };
         },
+        // data가 변경되면 computed 시행
+        // 배열.sort((a,b)=>{return 정수})
+        // 배열 요소 정렬 메서드, 매개 변수로 비교 함수 전달 가능
+        // 비교 함수가 양수를 반환하면 a가 b보다 뒤에 정렬됨 (b,a)
+        // 비교 함수가 0을 반환하면 a와 b의 순서는 변경되지 않음 (a,b)
+        // 비교 함수가 음수를 반환하면 a가 b보다 앞에 정렬됨 (a,b)
         computed: {
           sortedUsers() {
             return this.users.slice().sort((a, b) => {
