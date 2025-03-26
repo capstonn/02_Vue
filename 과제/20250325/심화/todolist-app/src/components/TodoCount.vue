@@ -21,6 +21,7 @@
 <script>
 export default {
   name: 'TodoCount',
+  // 부모로 부터 데이터 전달 받기 + 유효성 검사
   props: {
     // 전달 받은 todolist는 배열 형태, 필수 데이터
     todolist: { type: Array, required: true },
