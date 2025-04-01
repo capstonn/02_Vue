@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import { reactive, onMounted } from 'vue';
 import InputTodo from './components/InputTodo.vue';
 import TodoList from './components/TodoList.vue';
 import TodoCount from './components/TodoCount.vue';
